@@ -12,7 +12,7 @@ function comecar(){
     location.href = "menuEstudos.html";
 }
 
-function bemVindo(){
+function amigavel(){
     //pega o id 
     var titulo = document.getElementById("h1Titulo");
     //pega o nome

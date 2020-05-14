@@ -17,7 +17,7 @@
     <title>Brickin - Somar</title>
 </head>
 
-<body>
+<body id="body" onload="exibe()">
     <header>
         <nav class="nav nav-pills">
             <a class="nav-item nav-link" href="../index.html">Home</a>
@@ -27,12 +27,19 @@
     </header>
 
     <div class="container">
-        <h1 class="text-center">Some os valores para encontrar os resultados</h1>
+        <h1 class="text-center">Some os valores para</h1>
+        <h1 class="text-center" id="h1Titulo"> os resultados</h1>
         <div class="meuQuadrado mt-5">
-            <p class="text-center" id="amostragem">0</p>
+            <p class="text-center h1" id="amostragem">0</p>
             <hr>
             <input type="number" id="resposta" style="width: 100%;">
-            <p class="text-center">Digite a resposta...</p>
+            <p class="text-center" id="finalmente">Digite a resposta...</p>
+
+            <div class="row justify-content-md-center">
+            <button class="btn btn-success mr-3" id="btnCalcular" onclick="opera()">Verificar</button>
+            <button class="btn btn-success" id="btnProximo" onclick="proximo()">Próximo</button>
+            </div>
+
         </div>
     </div>
 
@@ -40,6 +47,7 @@
 
     <!-- Meu javascript -->
     <script src="../js/script.js"></script>
+    <script src="../js/operacao.js"></script>
     <!-- Bootstrap JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
