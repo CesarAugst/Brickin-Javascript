@@ -32,7 +32,11 @@ function exibe() {
             v1 = parseInt(Math.random() * 100);
             v2 = parseInt(Math.random() * 10);
             mostrar = v1 + ' / ' + v2;
-            resultado = v1 / v2
+            if(v2 != 0){
+                resultado = parseFloat((v1 / v2).toFixed(2));
+            }else{
+                resultado = 0;
+            }
             break;
 
         case 'multiplicacao':
@@ -46,7 +50,7 @@ function exibe() {
             v1 = parseInt(Math.random() * 10);
             v2 = parseInt(Math.random() * 100);
             mostrar = v1 + '% de ' + v2;
-            resultado = (v2/100)*v1
+            resultado = parseFloat(((v2/100)*v1).toFixed(2))
             break;
 
         default:
